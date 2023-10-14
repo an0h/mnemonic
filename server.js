@@ -19,6 +19,7 @@ function generateMnemonic() {
 
 app.get('/', (req, res) => {
   const mnemonic = generateMnemonic();
+  console.log("generated this mnemonic \n" + mnemonic + "\n\n")
   res.send(mnemonic);
 });
 
